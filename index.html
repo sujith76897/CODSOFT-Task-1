@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sujith | Web Developer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ 
+  <header class="navbar">
+    <div class="logo">SUJITH</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="sujith.pdf" target="_blank"><button >My Resume</button></a>
+  </header>
+
+  
+  <section id="home" class="home">
+    <div class="home-text">
+      <h1>Hi, I'm Sujith, a Web Developer</h1>
+      <p>Passionate about building innovative and functional websites</p>
+    </div>
+    <div class="home-photo">
+      <img src="sujith.jpg" alt="Sujith">
+    </div>
+  </section>
+
+  <section id="about" class="about-section">
+    <div class="glass-card">
+      <h1 class="about-title">About Me</h1>
+      <p class="about-intro">
+        Hello! I'm <strong>Sujith</strong>, a passionate <em>web developer </em>and a Btech Computer Science Engineering Student with a knack for creating visually stunning and interactive user experiences.
+        I specialize in front-end development, turning ideas into captivating digital realities.
+      </p>
+      <div class="quote-box">
+        <p class="quote-text">
+          "Web development is the perfect blend of art and technology, where creativity meets logic."
+        </p>
+      </div>
+      <p class="about-description">
+        I’m committed to delivering elegant, efficient, and user-friendly websites that make a lasting impact. Always exploring new trends and technologies,
+        I push the boundaries of what’s possible in web design.
+      </p>
+      <a href="https://wa.me/9392593707?text=Hi" class="connect-button">Connect With Me</a>
+    </div>
+  </section>
+  
+  <section id="skills" class="skills-section">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+      <div class="skill-card">
+        <i class="fab fa-html5"></i>
+        <h3>HTML5</h3>
+        <p>Building structured, SEO-friendly markup.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-css3-alt"></i>
+        <h3>CSS3</h3>
+        <p>Creating beautiful, responsive designs.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-js-square"></i>
+        <h3>JavaScript</h3>
+        <p>Interactive, dynamic front-end development.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-node"></i>
+        <h3>Node.js</h3>
+        <p>Server-side JavaScript for backend.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-database"></i>
+        <h3>MongoDB</h3>
+        <p>Efficient NoSQL database management.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" style="padding: 80px 0;">
+    <h2 class="section-title">My Projects</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <h3 class="project-title">E-commerce Website</h3>
+        <p class="project-description">This project showcases an e-commerce website built with HTML, CSS, and JavaScript, featuring a dynamic product catalog, shopping cart, and user authentication system.</p>
+        <div class="slideshow-container">
+          <div class="slide fade">
+            <img src="screenshot 1.png" class="project-image">
+          </div>
+          <div class="slide fade">
+            <img src="screenshot 2.png" class="project-image">
+          </div>
+          <div class="slide fade">
+            <img src="screenshot 3.png" class="project-image">
+          </div>
+          <a class="prev" onclick="changeSlide(-1, 'ecommerce')">&#10094;</a>
+          <a class="next" onclick="changeSlide(1, 'ecommerce')">&#10095;</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <h3 class="project-title">Calculator</h3>
+        <p class="project-description">A simple yet functional calculator application built with HTML, CSS, and JavaScript. It handles basic arithmetic operations with a clean and intuitive interface.</p>
+        <div class="slideshow-container">
+          <div class="slide fade">
+            <img src="calculator 1.png" class="project-image">
+          </div>
+          <a class="prev" onclick="changeSlide(-1, 'calculator')">&#10094;</a>
+          <a class="next" onclick="changeSlide(1, 'calculator')">&#10095;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <div class="contact-container">
+      <div class="contact-info">
+        <h3>Get in Touch</h3>
+        <p class="info-item">Name      :  GADE SUJITH REDDY</p>
+        <p class="info-item">Address   :  Church Compound, Suryapet</p>
+        <p class="info-item">Email     :  sujith76897@gmail.com</p>
+        <p class="info-item">Mobile    :  +91 9392593707</p>
+        <div class="con">
+          <a href="https://wa.me/919392593707?text=Hi%20" class="whatsapp-button" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+          <a href="sujith.pdf" target="_blank" class="resume">My Resume</a>
+       </div>
+  
+      </div>
+      <div class="contact-form">
+        <form id="my-form" action="https://formspree.io/f/xvgorkbl" method="POST" >
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email"  name="email" placeholder="Your Email" required>
+          <input type="tel" name="Mobile" placeholder="Your Mobile Number">
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+        <div id="form-status"></div>
+      </div>
+      
+  </section>
+
+  <footer>
+    <p>© 2024 Sujith - Web Developer Portfolio</p>
+  </footer>
+
+  <script>
+    var form = document.getElementById("my-form");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Thanks for your submission!";
+          form.reset();  
+          setTimeout(function () {
+            status.innerHTML = ""; 
+           
+            location.reload(); 
+          }, 2000);
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ");
+            } else {
+              status.innerHTML = "Oops! There was a problem submitting your form";
+            }
+          });
+        }
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form";
+      });
+    }
+  
+    form.addEventListener("submit", handleSubmit);
+  </script>
+  
+ 
+
+  
+  <script>
+
+    let ecommerceIndex = 1;
+    let calculatorIndex = 1;
+
+    function showSlides(index, project) {
+      let slides;
+      if (project === 'ecommerce') {
+        slides = document.querySelectorAll('.project-card:first-child .slide');
+        ecommerceIndex = index;
+      } else if (project === 'calculator') {
+        slides = document.querySelectorAll('.project-card:last-child .slide');
+        calculatorIndex = index;
+      }
+      if (index > slides.length) {
+        index = 1;
+        if (project === 'ecommerce') ecommerceIndex = 1;
+        else calculatorIndex = 1;
+      }
+      if (index < 1) {
+        index = slides.length;
+        if (project === 'ecommerce') ecommerceIndex = slides.length;
+        else calculatorIndex = slides.length;
+      }
+      slides.forEach(slide => slide.style.display = 'none');
+      slides[index - 1].style.display = 'block';
+    }
+    function changeSlide(n, project) {
+      if (project === 'ecommerce') {
+        showSlides(ecommerceIndex += n, 'ecommerce');
+      } else if (project === 'calculator') {
+        showSlides(calculatorIndex += n, 'calculator');
+      }
+    }
+    showSlides(1, 'ecommerce');
+    showSlides(1, 'calculator');
+
+    
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const form = event.target;
+
+    fetch(form.action, {
+      method: form.method,
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    }).then(response => {
+      alert('Your message has been sent successfully!');
+      form.reset();
+    }).catch(() => {
+      alert('There was an error. Please try again.');
+    });
+  });
+
+
+  </script>
+</body>
+</html>
