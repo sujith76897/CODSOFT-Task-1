@@ -587,16 +587,26 @@
     color: black;
   }
   
-
   footer {
-    padding: 20px;
     text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin-top: 80px;
+    padding: 8px;
     background-color: #333;
     color: #fff;
-     
+    font-size: 16px;
   }
   
+  footer .social-icons {
+    margin-top: 10px;
+  }
+  
+  footer .social-icons a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s;
+  }
+  
+  footer .social-icons a:hover {
+    color: #1da1f2; 
+  }
   
